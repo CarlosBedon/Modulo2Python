@@ -1,9 +1,4 @@
 import mod
-
-keys, values = mod.get_popullation()
-print (keys,values)
-
-
 data = [
     {
         'Country':'Colombia',
@@ -14,6 +9,14 @@ data = [
         "Population":200
     }
 ]
+def run():
+    keys, values = mod.get_popullation()
+    print (keys,values)
 
-result = mod.popullation_by_country(data,'Ecuador')
-print(result)
+    country = input('Insert country name')
+
+    result = mod.popullation_by_country(data,country)
+    print(result)
+
+if __name__ == '__main__':
+    run()

@@ -23,5 +23,6 @@ def add_taxes(item):
     item['taxes']= item['price']*.12
     return item
 
-new_items = list(map(add_taxes,items ))
-print(new_items)
+#new_items = list(map(add_taxes,items ))
+#print(new_items)
+
